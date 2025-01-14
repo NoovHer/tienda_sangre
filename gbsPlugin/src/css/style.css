@@ -1,0 +1,232 @@
+/* Estilo para el selector de estado */
+#nuevo_estado {
+	font-size: 0.9rem;
+	padding: 8px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	width: 100%;
+}
+
+/* Estilos generales para el contenedor principal */
+.order-details-container {
+	margin: 30px 0;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de las secciones */
+.order-details-container h3 {
+	font-size: 1.8em;
+	margin-bottom: 10px;
+	color: #333;
+	font-weight: bold;
+}
+
+/* Estilo para los estados del pedido */
+.status-label {
+	font-size: 1.2em;
+	padding: 5px 10px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	margin-left: 10px;
+}
+
+/* Estilos para los estados del pedido */
+.status-label.status-pending {
+	background-color: #f7c18c;
+	/* Suave para pendiente */
+	color: #9e7d4b;
+}
+
+.status-label.status-processing {
+	background-color: #f0ad4e;
+	/* Amarillo para estado activo */
+	color: #fff;
+}
+
+.status-label.status-on-hold {
+	background-color: #9ec6e0;
+	/* Azul claro para espera */
+	color: #084d6e;
+}
+
+.status-label.status-completed {
+	background-color: #5cb85c;
+	/* Verde para completado */
+	color: #fff;
+}
+
+.status-label.status-cancelled {
+	background-color: #d9534f;
+	/* Rojo para cancelado */
+	color: #fff;
+}
+
+.status-label.status-refunded {
+	background-color: #6c757d;
+	/* Gris neutro para reembolsado */
+	color: #fff;
+}
+
+.status-label.status-failed {
+	background-color: #b22222;
+	/* Rojo oscuro para fallido */
+	color: #fff;
+}
+
+.status-label.status-draft {
+	background-color: #cccccc;
+	/* Gris claro para borrador */
+	color: #333;
+}
+
+
+/* Estilos para las tarjetas de la información del pedido */
+.woocommerce-order-details__card {
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.woocommerce-order-details__card h3 {
+	font-size: 1.5em;
+	color: #cc1939;
+}
+
+.woocommerce-order-details__card ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.woocommerce-order-details__card li {
+	margin: 8px 0;
+}
+
+/* Estilos para la tabla de productos */
+.woocommerce-order-details__table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.woocommerce-order-details__table th,
+.woocommerce-order-details__table td {
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.woocommerce-order-details__table th {
+	background-color: #dd183b;
+	color: #fff;
+}
+
+.woocommerce-order-details__table td {
+	font-size: 1em;
+	color: #333;
+}
+
+/* Estilos para los formularios y botones */
+.woocommerce-form {
+	margin-top: 20px;
+}
+
+.woocommerce-form .form-row {
+	margin-bottom: 15px;
+}
+
+.woocommerce-form label {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #555;
+}
+
+.woocommerce-form select {
+	width: 100%;
+	padding: 10px;
+	font-size: 1em;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+.woocommerce-button {
+	background-color: #dd183b;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 1.2em;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.woocommerce-button:hover {
+	background-color: #005f8c;
+}
+
+/* Estilo para el historial de notas */
+.woocommerce-order-details__history {
+	list-style-type: none;
+	padding: 0;
+}
+
+.woocommerce-order-details__history li {
+	background-color: #f9f9f9;
+	margin-bottom: 10px;
+	padding: 12px;
+	border-radius: 5px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.woocommerce-order-details__history li span {
+	font-weight: bold;
+	color: #dd183b;
+}
+
+.woocommerce-order-details__history li p {
+	font-size: 1em;
+	color: #555;
+}
+
+/* Estilos para el enlace del PDF */
+.woocommerce-order-details__pdf {
+	margin-top: 20px;
+}
+
+.woocommerce-order-details__pdf a {
+	background-color: #f44336;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 1.2em;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.woocommerce-order-details__pdf a:hover {
+	background-color: #d32f2f;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+	.woocommerce-order-details__card {
+		padding: 15px;
+	}
+
+	.woocommerce-order-details__table th,
+	.woocommerce-order-details__table td {
+		font-size: 0.9em;
+		padding: 10px;
+	}
+
+	.woocommerce-order-details__pdf a,
+	.woocommerce-button {
+		width: 100%;
+		padding: 15px;
+		font-size: 1em;
+	}
+}
